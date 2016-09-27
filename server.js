@@ -51,7 +51,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function(req, res){ 
-   res.send(creatTemplet(articleOne));
+   res.send(creatTemplet(article-one));
 });
 app.get('/article-two', function(req, res){
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
