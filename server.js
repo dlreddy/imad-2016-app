@@ -23,13 +23,12 @@ function createTemplet (data){
     heading = data.heading;
     content = data.content;
 
-var htmlTemplet =`<html>
-    <head>
+    var htmlTemplet =`
+    <html>
+         <head>
         <meta name="viewpoint" content='width-divice-width, initial-scale=1' />
-        <title>
-            ${title}
-        </title>
-    </head>
+        <title> ${title} </title>
+        </head>
     <body>
         <div><a href="/">Home</a></div>
         <hr/>
@@ -40,8 +39,6 @@ var htmlTemplet =`<html>
         </div>
     </body>
     </html>
-    
-    
     `;
     return htmlTemplet;
 }
@@ -51,7 +48,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function(req, res){ 
-   res.send(creatTemplet(article-one));
+   res.send(creatTemplet(articleOne));
 });
 app.get('/article-two', function(req, res){
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
