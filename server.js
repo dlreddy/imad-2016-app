@@ -82,7 +82,7 @@ var articles = {
     }
 };
 
-function createtemplate (data){
+function createTemplate (data){
     
         title = data.title;
     	date = data.date;
