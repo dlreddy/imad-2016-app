@@ -79,7 +79,7 @@ var articles = {
 	<p>this is my first article so i have to do work hard to  get good result follow codecadamy adn khanacadamy.this 
 	is my first article so i have to do work hard to  get good result follow codecadamy adn khanacadamy..this is my first 
 	article so i have to do ff work hard to  get good result follow codecadamy adn khanacadamy.</p>`
-    },
+    }
 };
 
 function createTemplate (data){
@@ -118,6 +118,7 @@ app.get('/:articleName', function(req, res){
     var articleName = req.params.articleName;
    res.send(creatTemplate(articles[articleNam]));
 });
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
