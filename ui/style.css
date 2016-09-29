@@ -2,6 +2,7 @@ body {
     font-family: sans-serif;
     background-color: lightgrey;
     margin-top: 75px;
+    margin-left: 300px;
 }
 
 .center {
@@ -21,5 +22,5 @@ body {
 }
 
 .container{
-    max-width: 123px;
+    max-width: 1230px;
 }
