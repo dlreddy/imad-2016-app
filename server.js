@@ -88,7 +88,7 @@ function createtemplate (data){
     	date = data.date;
     	heading = data.heading;
     	content = data.content;
-        var htmlTemplet =`
+        var htmlTemplate =`
     	<html>
             <head>
         		<meta name="viewpoint" content='width-divice-width, initial-scale=1' />
